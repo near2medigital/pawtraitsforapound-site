@@ -1,0 +1,9 @@
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  X-Frame-Options: SAMEORIGIN
+  Content-Security-Policy: default-src 'self'; img-src 'self' https: data:; style-src 'self' 'unsafe-inline'; script-src 'self' https://tally.so 'sha256-zYlLSrb+KF4Ep8rEw5i5bxynXg+fQrjflhugqcNJvYY='; frame-src https://tally.so https://*.tally.so; connect-src 'self' https://tally.so https://*.tally.so; font-src 'self' data:; base-uri 'self'; form-action 'self' https://tally.so https://*.tally.so; frame-ancestors 'self'; upgrade-insecure-requests
+
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
