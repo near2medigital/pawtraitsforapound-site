@@ -2,26 +2,8 @@
 <html lang="en-GB">
 <head>
 <!-- Google tag (gtag.js) -->
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('consent', 'default', {
-  'analytics_storage': 'denied',
-  'ad_storage': 'denied',
-  'ad_user_data': 'denied',
-  'ad_personalization': 'denied'
-});
-try {
-  if (localStorage.getItem('pawtraits_analytics_consent') === 'granted') {
-    gtag('consent', 'update', {'analytics_storage': 'granted'});
-  }
-} catch (e) {}
-</script>
+<script src="/assets/analytics.js?v=1"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-D6NKF31LLG"></script>
-<script>
-gtag('js', new Date());
-gtag('config', 'G-D6NKF31LLG');
-</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Pawtraits Blog | Pet photos, portrait styles and pet art guides</title>
@@ -55,18 +37,6 @@ gtag('config', 'G-D6NKF31LLG');
 </main>
 <footer><div class="wrap foot"><div><a class="brand" href="/"><span class="brand-mark">P£</span><span>Pawtraits for a Pound</span></a><p class="small">A tiny business with a suspiciously competent robot studio.</p></div><div class="footer-links"><div><a href="/blog/">Blog</a> &nbsp;·&nbsp; <a href="/terms/">Terms of Sale</a> &nbsp;·&nbsp; <a href="/privacy/">Privacy Notice</a> &nbsp;·&nbsp; <button class="text-button" id="cookie-settings" type="button">Cookie settings</button></div><div class="social-links"><a href="https://www.threads.com/@pawtraitsforapound" target="_blank" rel="me noopener">Threads</a><a href="https://www.facebook.com/PawtraitsForAPound" target="_blank" rel="me noopener">Facebook</a><a href="https://www.instagram.com/pawtraitsforapound" target="_blank" rel="me noopener">Instagram</a></div><p class="small">© 2026 Pawtraits for a Pound</p></div></div></footer>
 <div class="consent-banner" id="analytics-consent"><div><strong>Anonymous site analytics?</strong><p>Allow Google Analytics so we can see which pages and campaigns are useful. Analytics cookies stay off unless you choose Allow analytics.</p></div><div class="consent-actions"><button class="btn small-btn" id="analytics-accept" type="button">Allow analytics</button><button class="btn dark small-btn" id="analytics-decline" type="button">No thanks</button></div></div>
-<script>
-(function(){
-  const key='pawtraits_analytics_consent';
-  const banner=document.getElementById('analytics-consent');
-  const read=()=>{try{return localStorage.getItem(key);}catch(e){return null;}};
-  const set=(value)=>{try{localStorage.setItem(key,value);}catch(e){}};
-  const apply=(value)=>{gtag('consent','update',{'analytics_storage':value==='granted'?'granted':'denied'});if(banner)banner.hidden=true;};
-  if(banner){banner.hidden=!!read();}
-  document.getElementById('analytics-accept')?.addEventListener('click',()=>{set('granted');apply('granted');});
-  document.getElementById('analytics-decline')?.addEventListener('click',()=>{set('denied');apply('denied');});
-  document.getElementById('cookie-settings')?.addEventListener('click',()=>{try{localStorage.removeItem(key);}catch(e){}if(banner)banner.hidden=false;});
-})();
-</script>
+
 </body>
 </html>
