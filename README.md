@@ -19,6 +19,6 @@ Cloudflare Pages deploys the repository root with no build command.
 
 The public blog lives at `/blog/` and uses the same static HTML/CSS architecture as the main site.
 
-Publishing rules are documented in `BLOG-PUBLISHING.md`. Article pages should live at `/blog/<slug>/index.html`, update the blog index and sitemap, then deploy through the normal GitHub -> Cloudflare Pages workflow.
+Publishing rules are documented in `BLOG-PUBLISHING.md`. Article pages should live at `/blog/<slug>/index.html`, update the blog index, then deploy through the normal GitHub -> Cloudflare Pages workflow.
 
-The blog index is indexable and included in the XML sitemap. Each published article should be added to `sitemap.xml` when it goes live.
+The blog index is indexable. GitHub Actions automatically rebuilds `sitemap.xml` from indexable canonical pages before each Cloudflare deployment, so new article pages are added without a manual sitemap edit.

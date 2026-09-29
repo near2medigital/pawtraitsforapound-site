@@ -32,6 +32,6 @@ Every published article must include:
 2. Choose final slug, title, description, category and social image.
 3. Create `blog/<slug>/index.html`.
 4. Add the article card to `blog/index.html`.
-5. Add the article URL to `sitemap.xml` and update the blog index `lastmod` date.
-6. Validate canonical, metadata, schema, internal links and no-em-dash rule.
-7. Commit, push, verify GitHub Actions and verify the live URLs.
+5. Validate canonical, metadata, schema, internal links and no-em-dash rule.
+6. Commit and push. GitHub Actions rebuilds `sitemap.xml` automatically from indexable canonical pages before deployment.
+7. Verify the GitHub Actions deployment, live article URL and live sitemap.
