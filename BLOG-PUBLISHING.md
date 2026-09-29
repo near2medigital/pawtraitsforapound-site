@@ -32,7 +32,6 @@ Every published article must include:
 2. Choose final slug, title, description, category and social image.
 3. Create `blog/<slug>/index.html`.
 4. Add the article card to `blog/index.html`.
-5. On the first article only, change the blog index from `noindex,follow` to `index,follow`.
-6. Add the blog index and article URL to `sitemap.xml`.
-7. Validate canonical, metadata, schema, internal links and no-em-dash rule.
-8. Commit, push, verify GitHub Actions and verify the live URLs.
+5. Add the article URL to `sitemap.xml` and update the blog index `lastmod` date.
+6. Validate canonical, metadata, schema, internal links and no-em-dash rule.
+7. Commit, push, verify GitHub Actions and verify the live URLs.

@@ -27,13 +27,15 @@ gtag('config', 'G-D6NKF31LLG');
 <title>Pawtraits Blog | Pet photos, portrait styles and pet art guides</title>
 <meta name="description" content="Practical Pawtraits guides to better pet photos, portrait styles, digital pet art, printing, framing and pet portrait gifts.">
 <link rel="canonical" href="https://pawtraitsforapound.co.uk/blog/">
-<meta name="robots" content="noindex,follow">
+<meta name="robots" content="index,follow">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Pawtraits Blog">
 <meta property="og:description" content="Pet photos, portrait styles and useful pet-art guides without the ceremonial waffle.">
 <meta property="og:url" content="https://pawtraitsforapound.co.uk/blog/">
 <meta property="og:image" content="https://pawtraitsforapound.co.uk/assets/og.jpg">
-<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/favicon.ico?v=3" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png?v=3">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png?v=3">
 <link rel="stylesheet" href="/styles.css">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Blog","name":"Pawtraits Blog","url":"https://pawtraitsforapound.co.uk/blog/","publisher":{"@type":"Organization","name":"Pawtraits for a Pound","url":"https://pawtraitsforapound.co.uk/"}}</script>
 </head>
@@ -48,11 +50,11 @@ gtag('config', 'G-D6NKF31LLG');
 <article class="topic-card"><span class="badge">STYLE</span><h2>Choose the right portrait look</h2><p>Royal, Watercolour, Modern and Pop Art, plus practical guidance on which visual treatment suits different pets and photographs.</p></article>
 <article class="topic-card"><span class="badge">DISPLAY & GIFTS</span><h2>Do something with the finished art</h2><p>Printing, framing, sizing, gifting and turning a digital Pawtrait into something worth putting on a wall.</p></article>
 </div>
-<div class="blog-empty"><span class="eyebrow">Structure first</span><h2>First guides incoming.</h2><p>The blog structure is live, but we are deliberately keeping this page out of search indexes until the first proper article is published. When that happens, this page becomes the permanent article hub.</p><a class="btn" href="/#order">Meanwhile, make a Pawtrait for £1</a></div>
+<div class="blog-empty"><span class="eyebrow">Structure first</span><h2>First guides incoming.</h2><p>The blog structure is live and ready for its first proper article. This page is the permanent article hub and will grow as new guides are published.</p><a class="btn" href="/#order">Meanwhile, make a Pawtrait for £1</a></div>
 </div></section>
 </main>
 <footer><div class="wrap foot"><div><a class="brand" href="/"><span class="brand-mark">P£</span><span>Pawtraits for a Pound</span></a><p class="small">A tiny business with a suspiciously competent robot studio.</p></div><div class="footer-links"><div><a href="/blog/">Blog</a> &nbsp;·&nbsp; <a href="/terms/">Terms of Sale</a> &nbsp;·&nbsp; <a href="/privacy/">Privacy Notice</a> &nbsp;·&nbsp; <button class="text-button" id="cookie-settings" type="button">Cookie settings</button></div><div class="social-links"><a href="https://www.threads.com/@pawtraitsforapound" target="_blank" rel="me noopener">Threads</a><a href="https://www.facebook.com/PawtraitsForAPound" target="_blank" rel="me noopener">Facebook</a><a href="https://www.instagram.com/pawtraitsforapound" target="_blank" rel="me noopener">Instagram</a></div><p class="small">© 2026 Pawtraits for a Pound</p></div></div></footer>
-<div class="consent-banner" id="analytics-consent" hidden><div><strong>Anonymous site analytics?</strong><p>Allow Google Analytics so we can see which pages and campaigns are useful. Analytics cookies stay off unless you choose Allow analytics.</p></div><div class="consent-actions"><button class="btn small-btn" id="analytics-accept" type="button">Allow analytics</button><button class="btn dark small-btn" id="analytics-decline" type="button">No thanks</button></div></div>
+<div class="consent-banner" id="analytics-consent"><div><strong>Anonymous site analytics?</strong><p>Allow Google Analytics so we can see which pages and campaigns are useful. Analytics cookies stay off unless you choose Allow analytics.</p></div><div class="consent-actions"><button class="btn small-btn" id="analytics-accept" type="button">Allow analytics</button><button class="btn dark small-btn" id="analytics-decline" type="button">No thanks</button></div></div>
 <script>
 (function(){
   const key='pawtraits_analytics_consent';
@@ -60,7 +62,7 @@ gtag('config', 'G-D6NKF31LLG');
   const read=()=>{try{return localStorage.getItem(key);}catch(e){return null;}};
   const set=(value)=>{try{localStorage.setItem(key,value);}catch(e){}};
   const apply=(value)=>{gtag('consent','update',{'analytics_storage':value==='granted'?'granted':'denied'});if(banner)banner.hidden=true;};
-  if(!read()&&banner)banner.hidden=false;
+  if(banner){banner.hidden=!!read();}
   document.getElementById('analytics-accept')?.addEventListener('click',()=>{set('granted');apply('granted');});
   document.getElementById('analytics-decline')?.addEventListener('click',()=>{set('denied');apply('denied');});
   document.getElementById('cookie-settings')?.addEventListener('click',()=>{try{localStorage.removeItem(key);}catch(e){}if(banner)banner.hidden=false;});

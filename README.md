@@ -21,4 +21,4 @@ The public blog lives at `/blog/` and uses the same static HTML/CSS architecture
 
 Publishing rules are documented in `BLOG-PUBLISHING.md`. Article pages should live at `/blog/<slug>/index.html`, update the blog index and sitemap, then deploy through the normal GitHub -> Cloudflare Pages workflow.
 
-Until the first article is published, the blog index deliberately uses `noindex,follow` and is omitted from the XML sitemap.
+The blog index is indexable and included in the XML sitemap. Each published article should be added to `sitemap.xml` when it goes live.

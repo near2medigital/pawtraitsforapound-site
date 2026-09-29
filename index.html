@@ -28,7 +28,7 @@ gtag('config', 'G-D6NKF31LLG');
 <link rel="canonical" href="https://pawtraitsforapound.co.uk/">
 <meta property="og:type" content="website"><meta property="og:title" content="Pawtraits for a Pound"><meta property="og:description" content="Your pet. A work of art. Just £1."><meta property="og:url" content="https://pawtraitsforapound.co.uk/"><meta property="og:image" content="https://pawtraitsforapound.co.uk/assets/og.jpg">
 <meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#111118">
-<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/styles.css">
+<link rel="icon" href="/assets/favicon.ico?v=3" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png?v=3"><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png?v=3"><link rel="stylesheet" href="/styles.css">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"Pawtrait for a Pound","description":"One AI-generated digital pet portrait from one uploaded dog or cat photo.","image":["https://pawtraitsforapound.co.uk/assets/styles/royal.jpg","https://pawtraitsforapound.co.uk/assets/styles/watercolour.jpg","https://pawtraitsforapound.co.uk/assets/styles/modern.jpg","https://pawtraitsforapound.co.uk/assets/styles/pop-art.jpg"],"brand":{"@type":"Brand","name":"Pawtraits for a Pound"},"offers":{"@type":"Offer","priceCurrency":"GBP","price":"1.00","availability":"https://schema.org/InStock","url":"https://pawtraitsforapound.co.uk/#order"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Pawtraits for a Pound","url":"https://pawtraitsforapound.co.uk/","email":"pawtraitsforapound@gmail.com","sameAs":["https://www.threads.com/@pawtraitsforapound","https://www.facebook.com/PawtraitsForAPound","https://www.instagram.com/pawtraitsforapound"]}</script>
 </head>
 <body>
@@ -44,7 +44,7 @@ gtag('config', 'G-D6NKF31LLG');
 </main>
 <footer><div class="wrap foot"><div><a class="brand" href="/"><span class="brand-mark">P£</span><span>Pawtraits for a Pound</span></a><p class="small">A tiny business with a suspiciously competent robot studio.</p></div><div class="footer-links"><div><a href="/blog/">Blog</a> &nbsp;·&nbsp; <a href="/terms/">Terms of Sale</a> &nbsp;·&nbsp; <a href="/privacy/">Privacy Notice</a> &nbsp;·&nbsp; <button class="text-button" id="cookie-settings" type="button">Cookie settings</button></div><div class="social-links"><a href="https://www.threads.com/@pawtraitsforapound" target="_blank" rel="me noopener">Threads</a><a href="https://www.facebook.com/PawtraitsForAPound" target="_blank" rel="me noopener">Facebook</a><a href="https://www.instagram.com/pawtraitsforapound" target="_blank" rel="me noopener">Instagram</a></div><p class="small">© 2026 Pawtraits for a Pound</p></div></div></footer>
 <a class="mobile-cta" href="#order">Make my Pawtrait · £1</a>
-<div class="consent-banner" id="analytics-consent" hidden><div><strong>Anonymous site analytics?</strong><p>Allow Google Analytics so we can see which pages and campaigns are useful. Analytics cookies stay off unless you choose Allow analytics.</p></div><div class="consent-actions"><button class="btn small-btn" id="analytics-accept" type="button">Allow analytics</button><button class="btn dark small-btn" id="analytics-decline" type="button">No thanks</button></div></div>
+<div class="consent-banner" id="analytics-consent"><div><strong>Anonymous site analytics?</strong><p>Allow Google Analytics so we can see which pages and campaigns are useful. Analytics cookies stay off unless you choose Allow analytics.</p></div><div class="consent-actions"><button class="btn small-btn" id="analytics-accept" type="button">Allow analytics</button><button class="btn dark small-btn" id="analytics-decline" type="button">No thanks</button></div></div>
 <script>
 (function(){
   const key='pawtraits_analytics_consent';
@@ -55,7 +55,7 @@ gtag('config', 'G-D6NKF31LLG');
     gtag('consent','update',{'analytics_storage':value==='granted'?'granted':'denied'});
     if(banner) banner.hidden=true;
   };
-  if(!read() && banner) banner.hidden=false;
+  if(banner){banner.hidden=!!read();}
   document.getElementById('analytics-accept')?.addEventListener('click',()=>{set('granted');apply('granted');});
   document.getElementById('analytics-decline')?.addEventListener('click',()=>{set('denied');apply('denied');});
   document.getElementById('cookie-settings')?.addEventListener('click',()=>{try{localStorage.removeItem(key);}catch(e){}; if(banner) banner.hidden=false;});
