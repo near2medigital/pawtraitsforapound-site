@@ -13,4 +13,12 @@ Static production website for https://pawtraitsforapound.co.uk.
 
 Production branch: `main`.
 
-Cloudflare Pages should deploy the repository root with no build command.
+Cloudflare Pages deploys the repository root with no build command.
+
+## Blog
+
+The public blog lives at `/blog/` and uses the same static HTML/CSS architecture as the main site.
+
+Publishing rules are documented in `BLOG-PUBLISHING.md`. Article pages should live at `/blog/<slug>/index.html`, update the blog index and sitemap, then deploy through the normal GitHub -> Cloudflare Pages workflow.
+
+Until the first article is published, the blog index deliberately uses `noindex,follow` and is omitted from the XML sitemap.
